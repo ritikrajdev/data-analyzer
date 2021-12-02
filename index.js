@@ -80,6 +80,7 @@ function get_column(column, data) {
 
 // Creates Options in Select Element
 function createOption(selectElement, values) {
+	selectElement.innerHTML = "";
 	values.forEach((opt) => {
 		option = document.createElement("option");
 		option.value = option.innerText = opt;
